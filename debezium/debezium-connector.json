@@ -1,0 +1,15 @@
+{
+  "name": "app-debz-connector",
+  "config": {
+    "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+    "plugin.name": "pgoutput",
+    "database.hostname": "postgres",
+    "database.port": "5432",
+    "database.user": "postgres",
+    "database.password": "postgres",
+    "database.dbname": "nytaxi",
+    "database.server.name": "postgres",
+     "topic.prefix":"lakehouse",
+    "table.include.list": "public.ny_taxi_trips_data"
+  }
+}
